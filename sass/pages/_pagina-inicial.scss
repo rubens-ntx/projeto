@@ -1,0 +1,68 @@
+.cabecalho-home{
+    background: url('../imagens (1)/img/cabecalho-home-bg.jpg') #000 no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding:50px 0;
+    padding-top: 150px;
+    @media(min-width: $breakpoint-md){
+        background-image: url('../../imagens (1)/img/cabecalho-home-bg-md.jpg') ;
+    }
+    @media(min-width: $breakpoint-lg){ 
+            height: 100vh;
+            .cabecalho-home__titulo{
+                font-size: 60px;
+                margin-top:250px;
+            }
+            .cabecalho-home__subtitulo{
+                font-size: 22px;
+            }
+            .cabecalho-home__role{
+                display: block;
+                position: absolute;
+                background: url('../../imagens (1)/img/icone-mouse.png') no-repeat center right; 
+                color: #ffffff;
+                bottom: 10px;
+                left: 50%;
+                height: 50px;
+                width: 190px;
+                text-align:left;
+                font-size: 20px;
+                text-decoration: none;
+                line-height: 45px;
+                margin-left: -95px;
+
+            }
+
+    }
+    @media(min-width: $breakpoint-xg){
+        background-image: url('../../imagens (1)/img/cabecalho-home-bg-xl.jpg') ;
+    }
+}
+.cabecalho-home__titulo{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.cabecalho-home__role{
+    display: none;
+}
+.home__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+}
+
+.home__titulo::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: $cor-principal;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.home__titulo--branco::after{
+    background-color: white;
+    
+}

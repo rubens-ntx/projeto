@@ -1,0 +1,22 @@
+.cabecalho{
+    background: #ffffff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0 7px rgba(0,0,0,0.4);
+    @media(min-width: $breakpoint-md){
+        min-height: 100px;
+        .logo{
+            float: left;
+            margin-top: 10px;
+        }
+        .menu-principal{
+            float: right;
+            margin-top: 12PX;
+            &__lista{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
